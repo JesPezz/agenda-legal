@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguridad de los datos — Agenda Escolar</title>
+<style>
+:root{color-scheme:light dark}
+body{max-width:46rem;margin:0 auto;padding:2rem 1.2rem 4rem;
+font:16px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .4rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid #888;
+background:rgba(128,128,128,.08)}
+code{background:rgba(128,128,128,.15);padding:.1em .35em;border-radius:4px}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid rgba(128,128,128,.4);padding:.45rem .6rem;text-align:left}
+nav{margin-bottom:2rem;font-size:.95rem}
+nav a{margin-right:1rem}
+a{color:#0b6bcb}
+</style>
+</head>
+<body>
+<nav><a href="index.html">Privacidad</a><a href="aviso.html">Aviso</a><a href="terminos.html">Términos</a><a href="data-safety.html">Seguridad de datos</a></nav>
+<h1>Formulario «Seguridad de los datos» de Google Play — respuestas sugeridas</h1>
+<p>Paquete: <code>com.jespezz.agenda_movil</code> · Versión a publicar: 15.3+</p>
+<h2>1. Recopilación y uso</h2>
+<ul>
+<li><strong>¿Tu app recopila o comparte datos de usuario requeridos?</strong> → <strong>Sí, pero solo si el usuario conecta Google Drive</strong> (función opcional). Sin conexión, la app no transmite nada.</li>
+<li><strong>¿Los datos se cifran en tránsito?</strong> → <strong>Sí</strong> (TLS).</li>
+<li><strong>¿El usuario puede solicitar la eliminación de sus datos?</strong> → <strong>Sí</strong> (desde la app con «Borrar base» y borrando el archivo en su Drive).</li>
+<li><strong>¿Los datos se procesan de forma efímera?</strong> → <strong>Sí</strong> para el cálculo de reportes (no se almacena nada fuera del equipo).</li>
+</ul>
+<h2>2. Tipos de datos (marcar)</h2>
+<table>
+<thead>
+<tr>
+<th>Categoría</th>
+<th>Tipo</th>
+<th>Recopilado</th>
+<th>Compartido</th>
+<th>Finalidad</th>
+<th>Opcional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Información personal</td>
+<td>Nombre</td>
+<td>Sí</td>
+<td>No</td>
+<td>Funcionalidad de la app</td>
+<td>Sí (solo con Drive)</td>
+</tr>
+<tr>
+<td>Información personal</td>
+<td>Otra información (CURP, fecha de nacimiento, sexo, matrícula, teléfono y dirección de tutores)</td>
+<td>Sí</td>
+<td>No</td>
+<td>Funcionalidad de la app</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Información educativa</td>
+<td>Calificaciones, asistencia, evaluaciones</td>
+<td>Sí</td>
+<td>No</td>
+<td>Funcionalidad de la app</td>
+<td>Sí</td>
+</tr>
+<tr>
+<td>Archivos y documentos</td>
+<td>Documentos generados (Word/PDF) y copia de la base</td>
+<td>Sí</td>
+<td>No</td>
+<td>Funcionalidad de la app</td>
+<td>Sí</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Por qué «Recopilado» y no «Compartido»:</strong> el destino es <strong>el propio Google Drive del usuario</strong> (permiso <code>drive.file</code>); el desarrollador no recibe los datos ni los comparte con terceros. Confirmar esta redacción en la consola, porque Play es estricto con este punto.</p>
+</blockquote>
+<h2>3. Prácticas de seguridad (declarar)</h2>
+<ul>
+<li>Cifrado en tránsito: <strong>sí</strong>.</li>
+<li>Base local cifrada en el dispositivo: <strong>sí</strong> (Keystore / DPAPI).</li>
+<li>Copia opcional en la nube cifrada con contraseña del usuario: <strong>disponible</strong>; <strong>por defecto, sin contraseña</strong> ⇒ declararlo con honestidad si Play pregunta por el cifrado en reposo.</li>
+<li>Excluida de las copias de seguridad de Android: <strong>sí</strong> (<code>allowBackup=false</code>).</li>
+<li>Sin analítica, publicidad ni telemetría: <strong>sí</strong>.</li>
+</ul>
+<h2>4. Otras secciones del formulario</h2>
+<ul>
+<li><strong>Público objetivo:</strong> adultos (docentes). <strong>No</strong> dirigida a menores de 13 años.</li>
+<li><strong>Contenido generado por usuarios:</strong> no.</li>
+<li><strong>Anuncios:</strong> no.</li>
+<li><strong>Compras dentro de la app:</strong> no.</li>
+<li><strong>Permisos sensibles:</strong> biometría (<code>USE_BIOMETRIC</code>), uso normal.</li>
+<li><strong>Eliminación de cuenta/datos:</strong> no hay cuentas propias; el borrado es local + en el Drive del usuario. Añadir en la ficha de la tienda una URL con instrucciones de borrado.</li>
+</ul>
+<h2>5. Antes de enviar</h2>
+<ol>
+<li>Publicar <code>POLITICA_PRIVACIDAD.md</code> en una URL pública y ponerla en la ficha y en la app.</li>
+<li>Poner las mismas respuestas del formulario en el aviso de privacidad para que no se contradigan.</li>
+<li>Revisar si la cuenta de desarrollador exige prueba cerrada con testers antes de producción.</li>
+</ol>
+</body>
+</html>
