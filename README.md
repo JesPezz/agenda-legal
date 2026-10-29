@@ -4,4 +4,4 @@ Política de privacidad, aviso de privacidad, términos de uso y respuestas de s
 
 Publicado con GitHub Pages: https://jespezz.github.io/agenda-legal/
 
-Contacto: agendaescolar.jespezz@gmail.com
+Contacto: agendaescolarappzz@gmail.com
