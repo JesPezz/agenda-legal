@@ -48,7 +48,7 @@ Estos términos se rigen por las leyes de **México**. Cualquier controversia se
 
 ## 10. Contacto
 
-**agenda.escolar.app@gmail.com**
+**agendaescolar.jespezz@gmail.com**
 
 ---
 

@@ -47,7 +47,7 @@ La app es una herramienta para adultos (docentes). El tratamiento de los datos d
 
 ## Contacto
 
-**agenda.escolar.app@gmail.com** · Desarrollador: **JesPezz**
+**agendaescolar.jespezz@gmail.com** · Desarrollador: **JesPezz**
 
 ## Cambios
 

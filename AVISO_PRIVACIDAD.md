@@ -8,7 +8,7 @@ El responsable del tratamiento de los datos del alumnado es **el docente o la in
 
 **JesPezz**, desarrollador de *Agenda Escolar*, **no recibe, almacena ni administra** esos datos: la aplicación funciona sin servidores del desarrollador.
 
-Contacto para cualquier asunto de privacidad: **agenda.escolar.app@gmail.com**.
+Contacto para cualquier asunto de privacidad: **agendaescolar.jespezz@gmail.com**.
 
 ## 2. Qué datos contiene la aplicación
 
