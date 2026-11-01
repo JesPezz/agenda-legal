@@ -6,7 +6,7 @@
 
 ## 1. Borrar los datos desde la aplicación
 
-**Android:** abre *Agenda Escolar* → tarjeta **Configuración** (o el menú de la app) → **Borrar base** → confirma. Se eliminan alumnos, asistencias, evaluaciones, tareas, calificaciones, expediente, diagnóstico, lectura, directorio y los datos de escuela y docente de **ese** teléfono.
+**Android:** abre *Agenda Escolar* → **Alumnos** → icono de la **papelera** en la barra superior (**Borrar base de datos**) → **Borrar**. Se eliminan alumnos, asistencias, evaluaciones, tareas, calificaciones, expediente, diagnóstico, lectura, directorio y los datos de escuela y docente de **ese** teléfono.
 
 **Windows:** *Agenda Escolar* → **Configuración** → grupo «Mantenimiento de la base de datos» → **Borrar base** → confirma.
 
@@ -22,7 +22,7 @@ Las copias de seguridad se guardan **aparte** de la base y no siempre se borran 
 ## 3. Borrar la copia en Google Drive
 
 1. Entra en <https://drive.google.com> con la cuenta que usaste en la app.
-2. Busca el archivo **`agenda_datos.json`** (es el único que crea la app).
+2. Busca el archivo **`agenda_datos.json`** (el que crea la app al sincronizar).
 3. Clic derecho → **Mover a la papelera** y luego **Vaciar papelera**.
 4. Opcional pero recomendado: en <https://myaccount.google.com/permissions> retira el acceso de *Agenda Escolar*.
 
@@ -35,7 +35,7 @@ Google conserva además un historial de versiones del archivo durante unos 30 d�
 
 ## Borrado a distancia (varios equipos con la misma copia)
 
-Si tienes la app en más de un equipo vinculado a la misma copia de Drive, puedes ordenar el borrado desde cualquiera de ellos: el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte, sin necesidad de tenerlo en la mano.
+Si tienes la app en más de un equipo vinculado a la misma copia de Drive, puedes ordenar el borrado desde otro teléfono vinculado: el equipo afectado pierde sus datos locales, sus puntos de restauración y su vínculo con la cuenta la próxima vez que se conecte, sin necesidad de tenerlo en la mano. Si el aparato perdido nunca vuelve a abrir la app, no recibe la orden; en ese caso sus datos siguen cifrados y puedes revocar el acceso de Google y borrar la copia de Drive (paso 3).
 
 ## Contacto
 

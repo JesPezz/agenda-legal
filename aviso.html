@@ -44,14 +44,15 @@ a{color:#0b6bcb}
 <li><strong>En el propio equipo</strong>, en una base local de la aplicación.</li>
 <li><strong>En la copia que el docente elija</strong>, opcionalmente: Google Drive de <strong>su propia cuenta</strong> (permiso <code>drive.file</code>, que solo permite a la aplicación ver y modificar los archivos que ella misma crea).</li>
 </ol>
-<p>No existe ningún otro destino. La aplicación <strong>no</strong> envía datos al desarrollador, <strong>no</strong> incluye analítica, publicidad ni reporte de fallos, y <strong>no</strong> vende ni cede información a terceros.</p>
+<p>No existe ningún otro destino de datos personales. La aplicación <strong>no</strong> envía datos al desarrollador, <strong>no</strong> incluye analítica, publicidad ni reporte de fallos, y <strong>no</strong> vende ni cede información a terceros.</p>
+<p>La única otra conexión que hace la app es consultar si existe una versión nueva (una petición al servidor de actualizaciones que <strong>no lleva datos del alumnado</strong>).</p>
 <h2>4. Para qué se usan</h2>
 <p>Únicamente para el funcionamiento de la aplicación: registrar asistencia, calificaciones y demás información escolar, generar reportes e imprimir la agenda. No se usan para perfilado, mercadotecnia ni decisiones automatizadas.</p>
 <h2>5. Transferencias</h2>
 <p>No hay transferencias a terceros distintas del almacenamiento que el propio docente configura en <strong>su</strong> Google Drive, regido además por la política de privacidad de Google.</p>
 <h2>6. Medidas de seguridad</h2>
 <ul>
-<li>Cifrado en tránsito (TLS) en toda comunicación.</li>
+<li>Cifrado en tránsito (TLS) en las comunicaciones con Google Drive y con el servidor de actualizaciones.</li>
 <li>Base local del teléfono cifrada (AES-256-GCM con clave en el Keystore de Android).</li>
 <li>Puntos de restauración cifrados (Keystore en Android, DPAPI en Windows).</li>
 <li>Desbloqueo con huella dactilar opcional.</li>
@@ -61,7 +62,8 @@ a{color:#0b6bcb}
 <p>Ninguna medida es infalible: la seguridad también depende de que el equipo tenga bloqueo de pantalla, de la fortaleza de la contraseña elegida y del resguardo de la cuenta de Google.</p>
 <h2>7. Conservación y eliminación</h2>
 <p>Los datos se conservan mientras el docente los mantenga. Puede eliminarlos en cualquier momento desde la propia aplicación («Borrar base») o desinstalándola; si además usó Google Drive, puede borrar el archivo desde su Drive. El detalle paso a paso está en las <a href="eliminacion.html">instrucciones para la eliminación de datos</a>.</p>
-<p>Si el docente vincula varios equipos a la misma copia de Drive, también puede <strong>ordenar el borrado a distancia</strong> desde cualquiera de ellos: el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte.</p>
+<p>Si el docente vincula varios teléfonos a la misma copia de Drive, también puede <strong>ordenar el borrado a distancia</strong> del aparato anterior desde otro teléfono vinculado: el equipo afectado pierde sus datos locales, sus puntos de restauración y su vínculo con la cuenta <strong>la próxima vez que se conecte</strong>. Si ese aparato nunca vuelve a abrir la app, no recibe la orden, aunque sus datos siguen cifrados con la clave del Keystore.</p>
+<p>El paso a paso está en las <a href="eliminacion.html">instrucciones para la eliminación de datos</a>.</p>
 <h2>8. Derechos del titular (ARCO)</h2>
 <p>Toda vez que <strong>JesPezz</strong> no recopila, transfiere ni almacena en servidores externos los datos tratados en la aplicación, se encuentra imposibilitado para acceder, rectificar, cancelar u oponerse al tratamiento de los mismos. Cualquier solicitud de derechos ARCO deberá dirigirse directamente ante el docente o la institución educativa correspondiente.</p>
 <h2>9. Menores de edad</h2>

@@ -28,7 +28,9 @@ Son datos de **menores de edad** y de terceros, por lo que su tratamiento exige 
 1. **En el propio equipo**, en una base local de la aplicación.
 2. **En la copia que el docente elija**, opcionalmente: Google Drive de **su propia cuenta** (permiso `drive.file`, que solo permite a la aplicación ver y modificar los archivos que ella misma crea).
 
-No existe ningún otro destino. La aplicación **no** envía datos al desarrollador, **no** incluye analítica, publicidad ni reporte de fallos, y **no** vende ni cede información a terceros.
+No existe ningún otro destino de datos personales. La aplicación **no** envía datos al desarrollador, **no** incluye analítica, publicidad ni reporte de fallos, y **no** vende ni cede información a terceros.
+
+La única otra conexión que hace la app es consultar si existe una versión nueva (una petición al servidor de actualizaciones que **no lleva datos del alumnado**).
 
 ## 4. Para qué se usan
 
@@ -40,7 +42,7 @@ No hay transferencias a terceros distintas del almacenamiento que el propio doce
 
 ## 6. Medidas de seguridad
 
-- Cifrado en tránsito (TLS) en toda comunicación.
+- Cifrado en tránsito (TLS) en las comunicaciones con Google Drive y con el servidor de actualizaciones.
 - Base local del teléfono cifrada (AES-256-GCM con clave en el Keystore de Android).
 - Puntos de restauración cifrados (Keystore en Android, DPAPI en Windows).
 - Desbloqueo con huella dactilar opcional.
@@ -53,7 +55,9 @@ Ninguna medida es infalible: la seguridad también depende de que el equipo teng
 
 Los datos se conservan mientras el docente los mantenga. Puede eliminarlos en cualquier momento desde la propia aplicación («Borrar base») o desinstalándola; si además usó Google Drive, puede borrar el archivo desde su Drive.
 
-Si el docente vincula varios equipos a la misma copia de Drive, también puede **ordenar el borrado a distancia** desde cualquiera de ellos: el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte.
+Si el docente vincula varios teléfonos a la misma copia de Drive, también puede **ordenar el borrado a distancia** del aparato anterior desde otro teléfono vinculado: el equipo afectado pierde sus datos locales, sus puntos de restauración y su vínculo con la cuenta **la próxima vez que se conecte**. Si ese aparato nunca vuelve a abrir la app, no recibe la orden, aunque sus datos siguen cifrados con la clave del Keystore.
+
+El paso a paso está en las [instrucciones para la eliminación de datos](https://jespezz.github.io/agenda-legal/eliminacion.html).
 
 ## 8. Derechos del titular (ARCO)
 

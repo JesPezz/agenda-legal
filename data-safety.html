@@ -27,10 +27,10 @@ a{color:#0b6bcb}
 <p>Paquete: <code>com.jespezz.agenda_movil</code> · <code>versionName</code> 17.10.0 · <code>versionCode</code> 6180</p>
 <h2>1. Recopilación y uso</h2>
 <ul>
-<li><strong>¿Tu app recopila o comparte datos de usuario requeridos?</strong> → <strong>Sí, pero solo si el usuario conecta Google Drive</strong> (función opcional). Sin conexión, la app no transmite nada.</li>
+<li><strong>¿Tu app recopila o comparte datos de usuario requeridos?</strong> → <strong>Sí, pero solo si el usuario conecta Google Drive</strong> (función opcional). Sin esa conexión no se transmite ningún dato del alumnado; la única petición de red es la consulta de actualizaciones, que no lleva datos personales.</li>
 <li><strong>¿Los datos se cifran en tránsito?</strong> → <strong>Sí</strong> (TLS).</li>
 <li><strong>¿El usuario puede solicitar la eliminación de sus datos?</strong> → <strong>Sí</strong> (desde la app con «Borrar base», borrando el archivo en su Drive, o con el <strong>borrado a distancia</strong> desde otro equipo vinculado a la misma copia).</li>
-<li><strong>¿Los datos se procesan de forma efímera?</strong> → <strong>Sí</strong> para el cálculo de reportes (no se almacena nada fuera del equipo).</li>
+<li><strong>¿Los datos se procesan de forma efímera?</strong> → <strong>No</strong>. Todo el tratamiento ocurre en el equipo y el resultado se guarda ahí; en servidores del desarrollador no se procesa nada.</li>
 </ul>
 <h2>2. Tipos de datos (marcar)</h2>
 <table>
@@ -85,8 +85,8 @@ a{color:#0b6bcb}
 <h2>3. Prácticas de seguridad (declarar)</h2>
 <ul>
 <li>Cifrado en tránsito: <strong>sí</strong>.</li>
-<li>Base local cifrada en el dispositivo: <strong>sí</strong> (Keystore / DPAPI).</li>
-<li>Copia opcional en la nube cifrada con contraseña del usuario: <strong>disponible</strong>; <strong>por defecto, sin contraseña</strong> ⇒ declararlo con honestidad si Play pregunta por el cifrado en reposo.</li>
+<li>Base local cifrada en el dispositivo: <strong>sí en Android</strong> (AES-256-GCM con clave del Keystore). <strong>En Windows no está cifrada</strong>: queda protegida por la sesión del usuario y por el bloqueo de la cuenta del equipo (DPAPI se usa solo para los puntos de restauración y la clave de la nube).</li>
+<li>Copia opcional en la nube cifrada con contraseña del usuario: <strong>disponible</strong>; <strong>por defecto va sin contraseña</strong> ⇒ declararlo con honestidad si Play pregunta por el cifrado en reposo.</li>
 <li>Excluida de las copias de seguridad de Android: <strong>sí</strong> (<code>allowBackup=false</code>).</li>
 <li>Sin analítica, publicidad ni telemetría: <strong>sí</strong>.</li>
 </ul>
@@ -97,7 +97,7 @@ a{color:#0b6bcb}
 <li><strong>Anuncios:</strong> no.</li>
 <li><strong>Compras dentro de la app:</strong> no.</li>
 <li><strong>Permisos sensibles:</strong> biometría (<code>USE_BIOMETRIC</code>), uso normal.</li>
-<li><strong>Eliminación de cuenta/datos:</strong> no hay cuentas propias; el borrado es local + en el Drive del usuario. Añadir en la ficha de la tienda una URL con instrucciones de borrado.</li>
+<li><strong>Eliminación de cuenta/datos:</strong> no hay cuentas propias; el borrado es local + en el Drive del usuario, más el borrado a distancia que se ordena desde otro teléfono vinculado (el aparato afectado se vacía al volver a sincronizar). URL para la ficha de la tienda: <code>https://jespezz.github.io/agenda-legal/eliminacion.html</code></li>
 </ul>
 <h2>5. Antes de enviar</h2>
 <ol>

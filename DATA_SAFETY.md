@@ -4,10 +4,10 @@ Paquete: `com.jespezz.agenda_movil` · `versionName` 17.10.0 · `versionCode` 61
 
 ## 1. Recopilación y uso
 
-- **¿Tu app recopila o comparte datos de usuario requeridos?** → **Sí, pero solo si el usuario conecta Google Drive** (función opcional). Sin conexión, la app no transmite nada.
+- **¿Tu app recopila o comparte datos de usuario requeridos?** → **Sí, pero solo si el usuario conecta Google Drive** (función opcional). Sin esa conexión no se transmite ningún dato del alumnado; la única petición de red es la consulta de actualizaciones, que no lleva datos personales.
 - **¿Los datos se cifran en tránsito?** → **Sí** (TLS).
 - **¿El usuario puede solicitar la eliminación de sus datos?** → **Sí** (desde la app con «Borrar base», borrando el archivo en su Drive, o con el **borrado a distancia** desde otro equipo vinculado a la misma copia).
-- **¿Los datos se procesan de forma efímera?** → **Sí** para el cálculo de reportes (no se almacena nada fuera del equipo).
+- **¿Los datos se procesan de forma efímera?** → **No**. Todo el tratamiento ocurre en el equipo y el resultado se guarda ahí; en servidores del desarrollador no se procesa nada.
 
 ## 2. Tipos de datos (marcar)
 
@@ -23,8 +23,8 @@ Paquete: `com.jespezz.agenda_movil` · `versionName` 17.10.0 · `versionCode` 61
 ## 3. Prácticas de seguridad (declarar)
 
 - Cifrado en tránsito: **sí**.
-- Base local cifrada en el dispositivo: **sí** (Keystore / DPAPI).
-- Copia opcional en la nube cifrada con contraseña del usuario: **disponible**; **por defecto, sin contraseña** ⇒ declararlo con honestidad si Play pregunta por el cifrado en reposo.
+- Base local cifrada en el dispositivo: **sí en Android** (AES-256-GCM con clave del Keystore). **En Windows no está cifrada**: queda protegida por la sesión del usuario y por el bloqueo de la cuenta del equipo (DPAPI se usa solo para los puntos de restauración y la clave de la nube).
+- Copia opcional en la nube cifrada con contraseña del usuario: **disponible**; **por defecto va sin contraseña** ⇒ declararlo con honestidad si Play pregunta por el cifrado en reposo.
 - Excluida de las copias de seguridad de Android: **sí** (`allowBackup=false`).
 - Sin analítica, publicidad ni telemetría: **sí**.
 
@@ -35,7 +35,7 @@ Paquete: `com.jespezz.agenda_movil` · `versionName` 17.10.0 · `versionCode` 61
 - **Anuncios:** no.
 - **Compras dentro de la app:** no.
 - **Permisos sensibles:** biometría (`USE_BIOMETRIC`), uso normal.
-- **Eliminación de cuenta/datos:** no hay cuentas propias; el borrado es local + en el Drive del usuario, más el borrado a distancia entre equipos vinculados. En la ficha de la tienda hay que declarar la URL con instrucciones: `https://jespezz.github.io/agenda-legal/eliminacion.html`.
+- **Eliminación de cuenta/datos:** no hay cuentas propias; el borrado es local + en el Drive del usuario, más el borrado a distancia que se ordena desde otro teléfono vinculado (el aparato afectado se vacía al volver a sincronizar). En la ficha de la tienda hay que declarar la URL con instrucciones: `https://jespezz.github.io/agenda-legal/eliminacion.html`.
 
 ## 5. Antes de enviar
 
