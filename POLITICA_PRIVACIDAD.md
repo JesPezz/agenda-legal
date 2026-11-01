@@ -9,7 +9,7 @@
 ## Resumen
 
 - **No recopilamos tus datos.** No hay servidores del desarrollador, ni cuentas propias, ni analítica, ni publicidad.
-- **Tú decides dónde se guarda.** Todo vive en tu equipo; opcionalmente puedes hacer copia en **tu** Google Drive.
+- **Tú decides dónde se guarda.** Todo vive en tu equipo (**arquitectura local-first**, sin servidores del desarrollador); opcionalmente puedes hacer copia en **tu** Google Drive.
 - **Puedes borrarlo todo** desde la app, en cualquier momento.
 
 ## Qué datos trata la app
@@ -35,10 +35,13 @@ La app **no se incluye** en las copias de seguridad automáticas de Android.
 
 Con nadie, salvo Google, y solo si tú conectas tu cuenta de Drive: el archivo se guarda en **tu** unidad con el permiso `drive.file`. No tenemos acceso a él.
 
+La aplicación es de **almacenamiento local desacoplado** (*local-first*): no hay flujo de datos hacia el desarrollador, que por ello **no actúa como encargado** del tratamiento ni necesita contrato de encargo contigo.
+
 ## Tus derechos y control
 
 - **Acceso y exportación:** los reportes en Word/PDF los generas tú.
 - **Supresión:** «Borrar base» elimina los datos del equipo; en Drive puedes borrar el archivo desde tu cuenta.
+- **Derechos ARCO:** al no recopilar el desarrollador ningún dato, no puede tramitarlos; las solicitudes se dirigen al docente o a la institución educativa.
 - **Borrado a distancia:** si vinculas varios equipos a la misma copia de Drive, puedes ordenar el borrado desde cualquiera de ellos; el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte.
 - **Portabilidad:** la app no envía tus datos fuera de tu control.
 

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminación de datos — Agenda Escolar</title>
+<style>
+:root{color-scheme:light dark}
+body{max-width:46rem;margin:0 auto;padding:2rem 1.2rem 4rem;
+font:16px/1.65 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+h1{font-size:1.9rem;line-height:1.2;margin:0 0 .4rem}
+h2{font-size:1.25rem;margin:2rem 0 .5rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .4rem}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid #888;
+background:rgba(128,128,128,.08)}
+code{background:rgba(128,128,128,.15);padding:.1em .35em;border-radius:4px}
+table{border-collapse:collapse;width:100%;margin:1rem 0}
+th,td{border:1px solid rgba(128,128,128,.4);padding:.45rem .6rem;text-align:left}
+nav{margin-bottom:2rem;font-size:.95rem}
+nav a{margin-right:1rem}
+a{color:#0b6bcb}
+</style>
+</head>
+<body>
+<nav><a href="index.html">Privacidad</a><a href="aviso.html">Aviso</a><a href="terminos.html">Términos</a><a href="data-safety.html">Seguridad de datos</a><a href="eliminacion.html">Eliminación de datos</a></nav>
+<h1>Instrucciones para la eliminación de datos — Agenda Escolar</h1>
+<p><strong>Última actualización:</strong> 31 de octubre de 2026 · <strong>Versión de la app:</strong> 18.8 (escritorio) / 17.10.0, código 6180 (Android)</p>
+<p><em>Agenda Escolar</em> no tiene cuentas propias ni servidores del desarrollador: los datos están en tu equipo y, si lo activaste, en <strong>tu</strong> Google Drive. Por eso la eliminación la ejecutas tú, en cuatro pasos posibles (basta con los que te correspondan).</p>
+
+<h2>1. Borrar los datos desde la aplicación</h2>
+<p><strong>Android:</strong> abre <em>Agenda Escolar</em> → tarjeta <strong>Configuración</strong> (o el menú de la app) → <strong>Borrar base</strong> → confirma. Se eliminan alumnos, asistencias, evaluaciones, tareas, calificaciones, expediente, diagnóstico, lectura, directorio y los datos de escuela y docente de <strong>ese</strong> teléfono.</p>
+<p><strong>Windows:</strong> <em>Agenda Escolar</em> → <strong>Configuración</strong> → grupo «Mantenimiento de la base de datos» → <strong>Borrar base</strong> → confirma.</p>
+<p>El borrado también se propaga a la copia de Drive la próxima vez que sincronices, para que el curso no vuelva a aparecer.</p>
+
+<h2>2. Borrar los puntos de restauración</h2>
+<p>Las copias de seguridad se guardan <strong>aparte</strong> de la base y no siempre se borran con ella:</p>
+<ul>
+<li><strong>Windows:</strong> abre la carpeta <code>C:\Users\&lt;tu usuario&gt;\AgendaEscolarData\respaldos\</code> y borra los archivos <code>respaldo_*.json</code> y <code>respaldo_*.json.cif</code>.</li>
+<li><strong>Android:</strong> los puntos viven en el almacenamiento privado de la app; se eliminan al usar <strong>Borrar datos</strong> en los ajustes de Android o al desinstalar.</li>
+</ul>
+
+<h2>3. Borrar la copia en Google Drive</h2>
+<ol>
+<li>Entra en <a href="https://drive.google.com">drive.google.com</a> con la cuenta que usaste en la app.</li>
+<li>Busca el archivo <strong><code>agenda_datos.json</code></strong> (es el único que crea la app).</li>
+<li>Clic derecho → <strong>Mover a la papelera</strong> y luego <strong>Vaciar papelera</strong>.</li>
+<li>Opcional pero recomendado: en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> retira el acceso de <em>Agenda Escolar</em>.</li>
+</ol>
+<p>Google conserva además un historial de versiones del archivo durante unos 30 días; al vaciar la papelera deja de estar accesible desde la app.</p>
+
+<h2>4. Desinstalar la aplicación</h2>
+<ul>
+<li><strong>Android:</strong> mantén pulsado el icono → <strong>Desinstalar</strong> (o Ajustes → Aplicaciones → <em>Agenda Escolar</em> → Desinstalar). También puedes usar <strong>Borrar datos</strong> si solo quieres vaciarla sin quitarla.</li>
+<li><strong>Windows:</strong> Configuración → Aplicaciones → <em>Agenda Escolar</em> → Desinstalar. Después, si quieres, borra la carpeta <code>AgendaEscolarData</code>.</li>
+</ul>
+
+<h2>Borrado a distancia (varios equipos con la misma copia)</h2>
+<p>Si tienes la app en más de un equipo vinculado a la misma copia de Drive, puedes ordenar el borrado desde cualquiera de ellos: el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte, sin necesidad de tenerlo en la mano.</p>
+
+<h2>Contacto</h2>
+<p>Si algo de esto no funciona como se describe, escribe a <strong>agendaescolarappzz@gmail.com</strong> indicando el equipo y la versión de la app.</p>
+<hr />
+<p><em>Este documento es una base técnica y debe ser revisado por un profesional del derecho antes de su publicación.</em></p>
+</body>
+</html>

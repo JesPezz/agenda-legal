@@ -1,12 +1,14 @@
 # Aviso de privacidad — Agenda Escolar
 
-**Última actualización:** 31 de octubre de 2026 · **Versión de la app:** 18.8 (escritorio) / 17.10 (móvil)
+**Última actualización:** 31 de octubre de 2026 · **Versión de la app:** 18.8 (escritorio) / 17.10.0, código 6180 (Android)
 
 ## 1. Quién trata tus datos
 
 El responsable del tratamiento de los datos del alumnado es **el docente o la institución educativa que usa la aplicación**, porque es quien los captura, los conserva y decide sobre ellos.
 
 **JesPezz**, desarrollador de *Agenda Escolar*, **no recibe, almacena ni administra** esos datos: la aplicación funciona sin servidores del desarrollador.
+
+La aplicación usa una arquitectura de **almacenamiento local desacoplado** (*local-first*): todo el tratamiento ocurre en el equipo del docente y, si él lo activa, en la copia de **su** Google Drive. No existe flujo de datos hacia el desarrollador, por lo que este **no actúa como encargado** del tratamiento ni requiere contrato de encargo.
 
 Contacto para cualquier asunto de privacidad: **agendaescolarappzz@gmail.com**.
 
@@ -55,7 +57,7 @@ Si el docente vincula varios equipos a la misma copia de Drive, también puede *
 
 ## 8. Derechos del titular (ARCO)
 
-Quien ejerza los derechos de acceso, rectificación, cancelación u oposición sobre los datos de un alumno debe dirigirse **a la escuela o al docente**, que son los responsables. Si la solicitud llegara al desarrollador, se remitirá al responsable y se responderá por escrito en el plazo legal, sin conservar copia de los datos.
+Toda vez que **JesPezz** no recopila, transfiere ni almacena en servidores externos los datos tratados en la aplicación, se encuentra imposibilitado para acceder, rectificar, cancelar u oponerse al tratamiento de los mismos. Cualquier solicitud de derechos ARCO deberá dirigirse directamente ante el docente o la institución educativa correspondiente.
 
 ## 9. Menores de edad
 

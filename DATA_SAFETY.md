@@ -1,6 +1,6 @@
 # Formulario «Seguridad de los datos» de Google Play — respuestas sugeridas
 
-Paquete: `com.jespezz.agenda_movil` · Versión a publicar: 15.3+
+Paquete: `com.jespezz.agenda_movil` · `versionName` 17.10.0 · `versionCode` 6180
 
 ## 1. Recopilación y uso
 
@@ -18,7 +18,7 @@ Paquete: `com.jespezz.agenda_movil` · Versión a publicar: 15.3+
 | Información educativa | Calificaciones, asistencia, evaluaciones | Sí | No | Funcionalidad de la app | Sí |
 | Archivos y documentos | Documentos generados (Word/PDF) y copia de la base | Sí | No | Funcionalidad de la app | Sí |
 
-> **Por qué «Recopilado» y no «Compartido»:** el destino es **el propio Google Drive del usuario** (permiso `drive.file`); el desarrollador no recibe los datos ni los comparte con terceros. Confirmar esta redacción en la consola, porque Play es estricto con este punto.
+> **Por qué «Recopilado» y no «Compartido»:** Google Play cataloga como *recopilado* todo dato que la app procesa para enviarlo fuera del dispositivo, aunque el destino sea la API de un tercero (aquí, el propio Google Drive del usuario con permiso `drive.file`). El desarrollador no recibe los datos ni los comparte con terceros, la **finalidad única es la funcionalidad de la app** y el usuario puede **controlarlos y eliminarlos** en cualquier momento. Confirmar esta redacción en la consola, porque Play es estricto con este punto.
 
 ## 3. Prácticas de seguridad (declarar)
 
@@ -35,7 +35,7 @@ Paquete: `com.jespezz.agenda_movil` · Versión a publicar: 15.3+
 - **Anuncios:** no.
 - **Compras dentro de la app:** no.
 - **Permisos sensibles:** biometría (`USE_BIOMETRIC`), uso normal.
-- **Eliminación de cuenta/datos:** no hay cuentas propias; el borrado es local + en el Drive del usuario. Añadir en la ficha de la tienda una URL con instrucciones de borrado.
+- **Eliminación de cuenta/datos:** no hay cuentas propias; el borrado es local + en el Drive del usuario, más el borrado a distancia entre equipos vinculados. En la ficha de la tienda hay que declarar la URL con instrucciones: `https://jespezz.github.io/agenda-legal/eliminacion.html`.
 
 ## 5. Antes de enviar
 
