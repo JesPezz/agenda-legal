@@ -1,6 +1,6 @@
 # Términos de uso y descargo de responsabilidad — Agenda Escolar
 
-**Última actualización:** 26 de octubre de 2026
+**Última actualización:** 31 de octubre de 2026
 
 ## 1. Objeto
 

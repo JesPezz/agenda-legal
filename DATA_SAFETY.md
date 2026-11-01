@@ -6,7 +6,7 @@ Paquete: `com.jespezz.agenda_movil` · Versión a publicar: 15.3+
 
 - **¿Tu app recopila o comparte datos de usuario requeridos?** → **Sí, pero solo si el usuario conecta Google Drive** (función opcional). Sin conexión, la app no transmite nada.
 - **¿Los datos se cifran en tránsito?** → **Sí** (TLS).
-- **¿El usuario puede solicitar la eliminación de sus datos?** → **Sí** (desde la app con «Borrar base» y borrando el archivo en su Drive).
+- **¿El usuario puede solicitar la eliminación de sus datos?** → **Sí** (desde la app con «Borrar base», borrando el archivo en su Drive, o con el **borrado a distancia** desde otro equipo vinculado a la misma copia).
 - **¿Los datos se procesan de forma efímera?** → **Sí** para el cálculo de reportes (no se almacena nada fuera del equipo).
 
 ## 2. Tipos de datos (marcar)

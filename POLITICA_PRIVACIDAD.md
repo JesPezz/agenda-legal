@@ -1,6 +1,6 @@
 # Política de privacidad — Agenda Escolar
 
-**Última actualización:** 26 de octubre de 2026
+**Última actualización:** 31 de octubre de 2026
 
 *Agenda Escolar* es una aplicación de escritorio (Windows) y para Android que permite al docente llevar la asistencia, las evaluaciones y los reportes de su grupo, y generar la agenda escolar en Word o PDF.
 
@@ -39,6 +39,7 @@ Con nadie, salvo Google, y solo si tú conectas tu cuenta de Drive: el archivo s
 
 - **Acceso y exportación:** los reportes en Word/PDF los generas tú.
 - **Supresión:** «Borrar base» elimina los datos del equipo; en Drive puedes borrar el archivo desde tu cuenta.
+- **Borrado a distancia:** si vinculas varios equipos a la misma copia de Drive, puedes ordenar el borrado desde cualquiera de ellos; el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte.
 - **Portabilidad:** la app no envía tus datos fuera de tu control.
 
 ## Datos de menores

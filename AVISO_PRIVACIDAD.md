@@ -1,6 +1,6 @@
 # Aviso de privacidad — Agenda Escolar
 
-**Última actualización:** 26 de octubre de 2026 · **Versión de la app:** 16.6 (escritorio) / 15.3 (móvil)
+**Última actualización:** 31 de octubre de 2026 · **Versión de la app:** 18.8 (escritorio) / 17.10 (móvil)
 
 ## 1. Quién trata tus datos
 
@@ -50,6 +50,8 @@ Ninguna medida es infalible: la seguridad también depende de que el equipo teng
 ## 7. Conservación y eliminación
 
 Los datos se conservan mientras el docente los mantenga. Puede eliminarlos en cualquier momento desde la propia aplicación («Borrar base») o desinstalándola; si además usó Google Drive, puede borrar el archivo desde su Drive.
+
+Si el docente vincula varios equipos a la misma copia de Drive, también puede **ordenar el borrado a distancia** desde cualquiera de ellos: el equipo afectado pierde sus datos locales y su vínculo con la cuenta la próxima vez que se conecte.
 
 ## 8. Derechos del titular (ARCO)
 
